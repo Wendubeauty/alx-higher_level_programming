@@ -71,6 +71,6 @@ int is_palindrome(listint_t **head)
 	reverse_list(&slow);
 	prev_slow->next = slow; /* Reconnect the first half and the second half */
 
-	return result;
+	return (result);
 }
 
