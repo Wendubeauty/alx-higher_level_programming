@@ -1,4 +1,7 @@
 #!/usr/bin/python3
-print_reversed_list_integer = __import__('3-print_reversed_list_integer').print_reversed_list_integer
-my_list = [1, 2, 3]
-print_reversed_list_integer(my_list)
+def new_in_list(my_list, idx, element):
+    if idx < 0 or idx > (len(my_list) - 1):
+        return (my_list)
+    cpy = [i for i in my_list]
+    cpy[idx] = element
+    return (cpy)
