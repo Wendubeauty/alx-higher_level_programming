@@ -6,11 +6,13 @@ def to_subtract(list_num):
         if max_number > n:
             total_to_subtract += n
     return (max_number - total_to_subtract)
+
 def roman_to_int(roman_string):
     if not roman_string:
         return 0
     if not isinstance(roman_string, str):
         return 0
+
     roman_numerals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     _list = list(roman_numerals.keys())
     number = 0
@@ -28,4 +30,5 @@ def roman_to_int(roman_string):
                 last_numeral_value = roman_numerals.get(i)
 
     number += to_subtract(list_num)
+
     return (number)
