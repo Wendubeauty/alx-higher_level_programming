@@ -5,6 +5,7 @@ Square Class
 This script defines a class for representing a 2D square.
 """
 
+
 class Square:
     """
     A 2D square class that contains methods for manipulation.
@@ -18,7 +19,7 @@ class Square:
 
         Args:
             size (int): The length of the sides of the square.
-        
+
         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is negative.
