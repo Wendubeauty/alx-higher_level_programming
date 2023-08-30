@@ -91,7 +91,7 @@ class Square:
     def my_print(self):
         """Prints a grid of '#' symbols representing the square.
 
-        Prints a blank line if the size is 0 and moves square to match postion.
+        Prints a blank line if the size is 0 and moves square to match postion
         """
         if self.__size == 0:
             print()
