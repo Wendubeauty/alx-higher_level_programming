@@ -11,7 +11,7 @@ class Node:
 
     Node class for a singly linked list.
     """
-    
+
     @property
     def data(self):
         """
@@ -43,7 +43,8 @@ class Node:
         """
         Initialize a new Node.
                                                                     Args:
-            data: The data to be stored in the Node.                    next_node (Node, optional): The next Node in the linked list.
+            data: The data to be stored in the Node.
+            next_node (Node, optional): The next Node in the linked list.
                                        Defaults to None.
         """
         if not isinstance(data, int):
@@ -80,7 +81,10 @@ class SinglyLinkedList:
             self.head = new_node
         else:
             current = self.head
-            while current.next_node is not None and current.next_node.data < value:
+            while (
+                current.next_node is not None and
+                current.next_node.data < value
+            ):
                 current = current.next_node
             new_node.next_node = current.next_node
             current.next_node = new_node
