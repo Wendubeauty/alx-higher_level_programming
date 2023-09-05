@@ -4,14 +4,14 @@
 
 class Rectangle:
     """a rectangle class"""
-    num_of_instances = 0
-    printSymbol = "#"
+    number_of_instances = 0
+    print_symbol = "#"
 
     def __init__(self, width=0, height=0):
         """This init is for a rectangle"""
         self.width = width
         self.height = height
-        Rectangle.num_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def __str__(self):
         """it prints a rectangle"""
@@ -34,7 +34,7 @@ class Rectangle:
         this deletes the rectangle and decreases the
         number of instances
         """
-        Rectangle.num_of_instances -= 1
+        Rectangle.number_of_instances -= 1
         print("Bye rectangle...")
 
     @property
