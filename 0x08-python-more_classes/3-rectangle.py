@@ -6,9 +6,19 @@ class Rectangle:
     """a rectangle class"""
 
     def __init__(self, width=0, height=0):
-        """this init is for the rectangle"""
+        """This init is for a rectangle"""
         self.width = width
         self.height = height
+
+    def __str__(self):
+        """it prints a rectangle"""
+        if self.__height == 0 or self.__width == 0:
+            return ""
+        size = "#" * self.__width
+        rectangle = []
+        for ind in range(self.__height):
+            rectangle.append(size)
+        return "\n".join(rectangle)
 
     @property
     def width(self):
@@ -39,7 +49,7 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """it calculates the area of the rectangle"""
+        """a rectangle area getter"""
         return self.__height * self.__width
 
     def perimeter(self):
